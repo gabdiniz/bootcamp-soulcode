@@ -23,7 +23,7 @@ let totalDemanda = [];
 let aux = 0;
 let totalLucro = 0;
 
-for (i = 0; i < demandas.length; i++) {
+for (let i = 0; i < demandas.length; i++) {
   aux = demandas[i] * precoFinal;
   totalLucro += aux;
   totalDemanda.push(aux);
