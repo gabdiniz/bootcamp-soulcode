@@ -34,6 +34,7 @@ li {
 
 a:hover {
   width: 110px;
+  transition: 0.2s;
 }
 
 a:active {
