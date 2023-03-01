@@ -5,7 +5,11 @@
 1. Crie uma variável que armazene uma temperatura em Fahrenheit, e re-
 alize a conversão para Celsius. A equação para realizar a conversão é:
 C = (F-32) / .18
+*/
+Fahrenheit = 86.2;
+Celsius
 
+/*
 2. Crie duas variáveis nome e sobrenome. Crie uma nova variável chamada
 nomeCompleto e realize a concatenação de nome e sobrenome com
 template strings.
