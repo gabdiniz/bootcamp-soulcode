@@ -10,7 +10,7 @@ console.log(meuPet[500]); // undefined // Não existe caractere nesse índice
 
 console.log(meuPet.length); // Retorna o tamanho da string
 
-for (let i= 0; i < meuPet.length; i++) {
+for (let i = 0; i < meuPet.length; i++) {
   // 0 até 3
   // console.log(i)
   console.log(meuPet[i]);
