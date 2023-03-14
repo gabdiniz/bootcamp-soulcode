@@ -4,12 +4,14 @@ import { createRoot } from "react-dom/client";
 // import { Footer } from "./components/Footer/Footer";
 // import { Mensagem } from "./components/Mensagem/Mensagem";
 // import { Postagem } from "./components/Postagem/Postagem";
-// import { Titulo } from "./components/Titulo/Titulo";
-import { Musics } from "./components/Musics/Musics";
+import { Titulo } from "./components/Titulo/Titulo";
+import { ListMusics } from "./components/ListMusics/ListMusics";
 import { Task } from "./components/Task/Task";
 
 // Linka o arquivo css ao projeto React
 import "./styles.css";
+
+import { ProductList } from "./components/ProductList/ProductList";
 
 // Selecionando a div na página
 const rootElement = document.getElementById("root");
@@ -28,10 +30,14 @@ root.render(
     <Blog></Blog>
     <hr />
     <Footer></Footer> */}
-    <Musics />
+    <Titulo borderColor="#FF0000" bgColor="#FF000022">Musicas:</Titulo>
+    <ListMusics />
+    <Titulo borderColor="#00FF00" bgColor="#00FF0022">Tarefas:</Titulo>
     <Task title="Beber água" status="Feito" deadline="14/03/2023 12:00" />
     <Task title="Almoçar" status="Pendente" deadline="14/03/2023 13:00" />
     <Task title="Correr" status="Atrasado" deadline="14/03/2023 06:00" />
+    <Titulo borderColor="#ffb6c1" bgColor="#ffb6c122">Discos:</Titulo>
+    <ProductList></ProductList>
   </div>
 );
 

@@ -1,15 +1,19 @@
 
 import "./Task.css";
-export function Task(props) {
-  // let title = props.title;
-  // let status = props.status;
-  // let deadline = props.deadline;
+export function Task(/*props*/ { title, status, deadline }) {
+
+  // desestuturação
+  // let { title, status, deadline } = props; 
+  // let { title } = props;// let title = props.title; 
+  // let { status } = props;
+  // let { deadline } = props;
+
   return (
     <div className="task">
-      <strong>{props.title}</strong>
+      <strong>{title}</strong>
       <div className="details">
-        <span className="status">{props.status}</span>
-        <span className="deadline">{props.deadline}</span>
+        <span className="status">{status}</span>
+        <span className="deadline">{deadline}</span>
       </div>
     </div>
   );
