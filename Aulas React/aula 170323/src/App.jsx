@@ -1,9 +1,9 @@
-import { Quiz } from "./components/Quiz/Quiz";
+import { CalculadoraIMC } from "./components/CalculadoraIMC/CalculadoraIMC";
 
 export function App() {
   return (
     <>
-      <Quiz />
+      <CalculadoraIMC />
     </>
   );
 }

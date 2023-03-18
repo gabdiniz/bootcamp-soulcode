@@ -8,7 +8,7 @@
 let nota1 = 7;
 let nota2 = 8;
 let nota3 = 6.5;
-let media = (nota1+nota2+nota3) / 3;
+let media = (nota1 + nota2 + nota3) / 3;
 
 console.log(media.toFixed(2));
 
@@ -34,7 +34,7 @@ let imc = peso / (altura * altura);
 
 console.log(imc.toFixed(2))
 
-if(imc < 18.5) {
+if (imc < 18.5) {
   console.log("Abaixo do peso.");
 }
 else if (imc <= 24.9) {
@@ -63,7 +63,7 @@ let b = 6;
 if (a > b) {
   console.log(`a(${a}) é maior que b(${b})`);
 }
-else if (b > a){
+else if (b > a) {
   console.log(`b(${b}) é maior que a(${a})`);
 }
 else {
