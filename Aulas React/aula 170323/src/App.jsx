@@ -1,9 +1,9 @@
-import { CalculadoraIMC } from "./components/CalculadoraIMC/CalculadoraIMC";
+import { CadastroPessoas } from "./components/CadastroPessoas/CadastroPessoas";
 
 export function App() {
   return (
     <>
-      <CalculadoraIMC />
+      <CadastroPessoas />
     </>
   );
 }
