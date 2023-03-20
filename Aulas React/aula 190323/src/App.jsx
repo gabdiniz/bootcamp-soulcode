@@ -1,11 +1,11 @@
 
-import { Desafio3 } from "./components/Desafio3/Desafio3";
+import { Porcentagem } from "./components/Porcentagem/Porcentagem";
 
 
 export function App() {
   return (
     <>
-      <Desafio3 />
+      <Porcentagem />
     </>
   );
 }
