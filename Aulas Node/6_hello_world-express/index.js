@@ -2,9 +2,14 @@ const express = require("express");
 const cpf = require("cpf");
 const usuarios = require("./usuarios")
 
+
 // Define uma aplicação backend em Express
 // Recursos pré-configurados
 const app = express();
+
+app.get("/usuarios", (req, res) => {
+  res.json(usuarios);
+});
 
 // Define um roteamento
 app.get("/", (requisicaom, resposta) => {
@@ -82,6 +87,32 @@ app.get("/e3", (req, res) => {
 app.get("/usuarios/:index", (req, res) => {
   res.json(usuarios[Number(req.params.index)]);
 })
+
+// Exercício I: Crie uma rota "/usuarios/email", e filtre o usuário com o email fornecido via parâmetros de rota. Caso não encontre, responda com 404.
+// => /usuarios/email/gabriel.braga@soulcode.com
+app.get("/usuarios/email/:email", (req, res) => {
+  const { email } = req.params;
+  const user = usuarios.find((user) => {
+    return user.email === email;
+  })
+  if (user) {
+    res.json(user)
+  }
+  else {
+    res.status("404").json({ message: "usuario não encontrado" })
+  }
+})
+
+
+
+app.get("/usuario/novo", (req, res) => {
+  const { email, nome } = req.query;
+  if (!email || !nome) res.send("Error");
+  usuarios.push({ nome: nome, email: email });
+  res.status("201").json({ message: "Usuario adicionado" })
+})
+
+console.log(usuarios)
 
 
 // Inicializa a escuta de requisições do servidor
